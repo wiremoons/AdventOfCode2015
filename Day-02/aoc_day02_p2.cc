@@ -55,7 +55,7 @@ int main()
 	}
     
     std::cout << std::endl
-              << "Advent Of Code 2015 :  Day 02 Part 01" << std::endl
+              << "Advent Of Code 2015 :  Day 02 Part 02" << std::endl
               << std::endl;
     std::cout << "  » Calculated surface area for total of '" << count << "' items." << std::endl;
     std::cout << "  » PUZZLE ANSWER: ribbon length total: " << total_ribbon
