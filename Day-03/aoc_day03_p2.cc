@@ -23,7 +23,6 @@
 
 int main()
 {
-
     std::string line;
     std::ifstream input_file;
 
