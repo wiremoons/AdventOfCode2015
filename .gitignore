@@ -1,4 +1,5 @@
 # AOC Git Ignore file
+.DS_Store
 
 # Clion IDE files
 .idea/
