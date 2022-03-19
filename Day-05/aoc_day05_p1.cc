@@ -98,8 +98,7 @@ int main()
     input_file.open("./data/day05-input.txt", std::ios::in);
 
     if (!input_file.is_open()) {
-        std::cout << "Error opening puzzle date input file. Aborted."
-                  << std::endl;
+        std::cout << "Error opening puzzle date input file. Aborted." << std::endl;
         std::exit(1);
     }
 
@@ -136,14 +135,9 @@ int main()
         nice_tracker = 0;
     }
 
-    std::cout << std::endl
-              << "Advent Of Code 2015 :  Day 05 Part 01" << std::endl
-              << std::endl;
-    std::cout << "  » Number of strings analysed : '" << count_str << "'"
-              << std::endl;
-    std::cout << "  » PUZZLE ANSWER: number of 'nice' strings: "
-              << nice_final_count << std::endl
-              << std::endl;
+    std::cout << std::endl << "Advent Of Code 2015 :  Day 05 Part 01" << std::endl << std::endl;
+    std::cout << "  » Number of strings analysed : '" << count_str << "'" << std::endl;
+    std::cout << "  » PUZZLE ANSWER: number of 'nice' strings: " << nice_final_count << std::endl << std::endl;
 
     input_file.close();
     std::exit(0);
