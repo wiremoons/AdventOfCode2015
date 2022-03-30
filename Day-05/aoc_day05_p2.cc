@@ -21,6 +21,8 @@
 #include <iostream>
 #include <string>
 
+/// Check if the provided input string contains any of the banned strings
+/// Return true if banned string is found in the input
 bool has_banned(const std::string &input, const std::string double_str)
 {
     size_t found{0};
