@@ -23,7 +23,7 @@
 
 /// Check if the provided input string contains any of the banned strings
 /// Return true if banned string is found in the input
-bool has_banned(const std::string &input, const std::string double_str)
+bool has_banned(const std::string &input, const std::string &double_str)
 {
     size_t found{0};
     const std::string b1 = "ab";
@@ -57,23 +57,22 @@ bool has_banned(const std::string &input, const std::string double_str)
 
 bool has_double_letter_spaced(const std::string &input)
 {
-    bool doubleletter = false;
+    bool double_letter = false;
     size_t inputSize = input.size();
     for (size_t i = 0; i < (inputSize - 1); ++i) {
         char currLetter = input[i];
         char nextLetter = input[i + 1];
         if (currLetter == nextLetter) {
-            doubleletter = true;
+            double_letter = true;
             break;
         }
     }
 
-    return doubleletter;
+    return double_letter;
 }
 
 int main()
 {
-
     std::string line;
     std::ifstream input_file;
 
