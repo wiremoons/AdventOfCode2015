@@ -65,20 +65,24 @@ bool has_banned(const std::string &input)
     // std::endl;
 
     found = input.find(b1);
-    if (found != std::string::npos)
+    if (found != std::string::npos) {
         return true;
+    }
 
     found = input.find(b2);
-    if (found != std::string::npos)
+    if (found != std::string::npos) {
         return true;
+    }
 
     found = input.find(b3);
-    if (found != std::string::npos)
+    if (found != std::string::npos) {
         return true;
+    }
 
     found = input.find(b4);
-    if (found != std::string::npos)
+    if (found != std::string::npos) {
         return true;
+    }
 
     // std::cout << "No banned found." << std::endl;
 
@@ -135,9 +139,9 @@ int main()
         nice_tracker = 0;
     }
 
-    std::cout << std::endl << "Advent Of Code 2015 :  Day 05 Part 01" << std::endl << std::endl;
-    std::cout << "  » Number of strings analysed : '" << count_str << "'" << std::endl;
-    std::cout << "  » PUZZLE ANSWER: number of 'nice' strings: " << nice_final_count << std::endl << std::endl;
+    std::cout << std::endl << "Advent Of Code 2015 :  Day 05 Part 01" << '\n' << '\n';
+    std::cout << "  » Number of strings analysed : '" << count_str << "'" << '\n';
+    std::cout << "  » PUZZLE ANSWER: number of 'nice' strings: " << nice_final_count << '\n' << std::endl;
 
     input_file.close();
     std::exit(0);
