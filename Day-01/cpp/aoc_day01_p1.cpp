@@ -22,11 +22,10 @@
 
 int main()
 {
-
     std::string line;
     std::ifstream input_file;
 
-    int up = 0, down = 0, floor = 0;
+    int up{}, down{}, floor{};
 
     input_file.open("./data/day01-input.txt", std::ios::in);
 
@@ -36,13 +35,8 @@ int main()
         }
     }
 
-    std::cout << std::endl
-              << "Advent Of Code 2015 :  Day 01 Part 01" << std::endl
-              << std::endl;
-    std::cout << "  » Moved up '" << up << "' and moved down '" << down
-              << "' floors" << std::endl;
-    std::cout << "  » Floor changes analysed: '" << down + up << "'"
-              << std::endl;
-    std::cout << "  » PUZZLE ANSWER: final floor is: " << floor << std::endl
-              << std::endl;
+    std::cout << std::endl << "Advent Of Code 2015 :  Day 01 Part 01" << '\n' << '\n';
+    std::cout << "  » Moved up '" << up << "' and moved down '" << down << "' floors" << '\n';
+    std::cout << "  » Floor changes analysed: '" << down + up << "'" << '\n';
+    std::cout << "  » PUZZLE ANSWER: final floor is: " << floor << '\n' << std::endl;
 }
