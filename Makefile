@@ -3,9 +3,9 @@
 .PHONY: default
 default: all ;
 
-all: d1 d2 d3 d5
+all: d1 d2 d3 d5 d6
 
-clean: d1-clean d2-clean d3-clean d5-clean
+clean: d1-clean d2-clean d3-clean d5-clean d6-clean
 
 d1:
 	make -C ./Day-01/cpp
@@ -19,6 +19,9 @@ d3:
 d5:
 	make -C ./Day-05
 
+d6:
+	make -C ./Day-06
+
 # run make clean for each day
 d1-clean:
 	make -C ./Day-01/cpp clean
@@ -31,3 +34,6 @@ d3-clean:
 
 d5-clean:
 	make -C ./Day-05 clean
+
+d6-clean:
+	make -C ./Day-06 clean
