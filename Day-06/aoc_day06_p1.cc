@@ -14,6 +14,8 @@
 //
 // Build with:
 // clang++ -std=c++20 -Wall -o aoc_day06_p1 aoc_day06_p1.cc
+//   or
+// g++ -std=c++20 -Wall -o aoc_day06_p1 aoc_day06_p1.cc
 //
 
 #include <algorithm>
