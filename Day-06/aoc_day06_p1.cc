@@ -18,13 +18,10 @@
 // g++ -std=c++20 -Wall -o aoc_day06_p1 aoc_day06_p1.cc
 //
 
-#include <algorithm>
-#include <cstddef>
 #include <fstream>
 #include <iostream>
 #include <numeric>
 #include <ostream>
-#include <string>
 #include <vector>
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -66,9 +63,11 @@ void toggle_lights(std::vector<std::vector<bool>> &light_status)
     }
 }
 
+///////////////////////////////////////////////////////////////////////////////
+//                         MAIN ENTRY POINT                                  //
+///////////////////////////////////////////////////////////////////////////////
 int main()
 {
-
     std::string line{};
     std::ifstream input_file{};
     // 0-999 grid if bool to track light on/off status - initialised to off
