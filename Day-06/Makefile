@@ -13,6 +13,7 @@ SRC_P1=aoc_day$(DAY)_p1.cc
 SRC_P2=aoc_day$(DAY)_p2.cc 
 OUT_P1=aoc_day$(DAY)_p1
 OUT_P2=aoc_day$(DAY)_p2
+
 #
 ## set compiler to use:
 CC=clang++
@@ -60,9 +61,13 @@ endif
 .PHONY: default
 default: all ;
 
+# source file alias for p1 and p2
+#aoc_day$(DAY)_p1.cc: p1
+#aoc_day$(DAY)_p2.cc: p2
+
 # make both part 1 and 2
 all: p1 p2
-	
+
 # if: 'make p1' build just part 1
 p1: $(SRC_P1)
 	$(CC) $(CPP_FLAGS) -o $(OUT_P1)$(EXE_END) $(SRC_P1) $(LIBFLAGS)
