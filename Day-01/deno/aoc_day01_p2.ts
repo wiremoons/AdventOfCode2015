@@ -6,7 +6,7 @@
  * @author simon rowe <simon@wiremoons.com>
  * @license open-source released under "MIT License"
  *
- * @date originally created: 14 March 2021
+ * @date originally created: 14 March 2022
  *
  * @details Advent of Code (AOC) 2015 Puzzle solution. See: https://adventofcode.com/2015/
  *

@@ -5,7 +5,7 @@
  * @author simon rowe <simon@wiremoons.com>
  * @license open-source released under "MIT License"
  *
- * @date originally created: 14 March 2021
+ * @date originally created: 14 March 2022
  *
  * @details Advent of Code (AOC) 2015 Puzzle solution. See:
  * https://adventofcode.com/2015/
@@ -32,18 +32,14 @@ int main()
 
     while (std::getline(input_file, line)) {
         for (auto &ch : line) {
-            ch == '(' ? up++ && floor++ : down++ && floor--;
-            if (floor == -1 && basement == 0) basement = up + down;
+            ch == '(' ? up++ &&floor++ : down++ &&floor--;
+            if (floor == -1 && basement == 0)
+                basement = up + down;
         }
     }
 
-    std::cout << std::endl
-              << "Advent Of Code 2015 :  Day 01 Part 02" << std::endl
-              << std::endl;
-    std::cout << "  » Moved up '" << up << "' and moved down '" << down
-              << "' floors" << std::endl;
-    std::cout << "  » Floor changes analysed: '" << down + up << "'"
-              << std::endl;
-    std::cout << "  » PUZZLE ANSWER: basement first enter on move: " << basement << std::endl
-              << std::endl;
+    std::cout << std::endl << "Advent Of Code 2015 :  Day 01 Part 02" << std::endl << std::endl;
+    std::cout << "  » Moved up '" << up << "' and moved down '" << down << "' floors" << std::endl;
+    std::cout << "  » Floor changes analysed: '" << down + up << "'" << std::endl;
+    std::cout << "  » PUZZLE ANSWER: basement first enter on move: " << basement << std::endl << std::endl;
 }

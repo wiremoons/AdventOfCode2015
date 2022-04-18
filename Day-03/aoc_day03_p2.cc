@@ -5,7 +5,7 @@
  * @author simon rowe <simon@wiremoons.com>
  * @license open-source released under "MIT License"
  *
- * @date originally created: 16 March 2021
+ * @date originally created: 16 March 2022
  *
  * @details Advent of Code (AOC) 2015 Puzzle solution. See:
  * https://adventofcode.com/2015/
@@ -35,8 +35,7 @@ int main()
     input_file.open("./data/day03-input.txt", std::ios::in);
 
     if (!input_file.is_open()) {
-        std::cout << "Error opening puzzle date input file. Aborted."
-                  << std::endl;
+        std::cout << "Error opening puzzle date input file. Aborted." << std::endl;
         std::exit(1);
     }
 
@@ -48,17 +47,13 @@ int main()
     while (std::getline(input_file, line)) {
         for (auto &ch : line) {
             if (ch == '>')
-                santa ? coords_v.push_back({santa_x++, santa_y})
-                      : coords_v.push_back({robot_x++, robot_y});
+                santa ? coords_v.push_back({santa_x++, santa_y}) : coords_v.push_back({robot_x++, robot_y});
             if (ch == '<')
-                santa ? coords_v.push_back({santa_x--, santa_y})
-                      : coords_v.push_back({robot_x--, robot_y});
+                santa ? coords_v.push_back({santa_x--, santa_y}) : coords_v.push_back({robot_x--, robot_y});
             if (ch == '^')
-                santa ? coords_v.push_back({santa_x, santa_y++})
-                      : coords_v.push_back({robot_x, robot_y++});
+                santa ? coords_v.push_back({santa_x, santa_y++}) : coords_v.push_back({robot_x, robot_y++});
             if (ch == 'v')
-                santa ? coords_v.push_back({santa_x, santa_y--})
-                      : coords_v.push_back({robot_x, robot_y--});
+                santa ? coords_v.push_back({santa_x, santa_y--}) : coords_v.push_back({robot_x, robot_y--});
             // std::cout << "Delivery by: " << (santa ? "santa" : "robot");
             // std::cout << " at co-ords: " << (santa ? santa_x : robot_x) <<
             // "," << (santa ? santa_y : robot_y) << std::endl;
@@ -71,16 +66,11 @@ int main()
     // must sort first for unique to work
     std::sort(coords_v.begin(), coords_v.end());
     // just use unique co-ordinates only so each house location is show once
-    coords_v.erase(std::unique(coords_v.begin(), coords_v.end()),
-                   coords_v.end());
+    coords_v.erase(std::unique(coords_v.begin(), coords_v.end()), coords_v.end());
 
-    std::cout << std::endl
-              << "Advent Of Code 2015 :  Day 03 Part 02" << std::endl
-              << std::endl;
-    std::cout << "  » Number of deliveries total: '" << deliveries << "'"
-              << std::endl;
-    std::cout << "  » PUZZLE ANSWER: unique number of houses delivered too: "
-              << coords_v.size() << std::endl
+    std::cout << std::endl << "Advent Of Code 2015 :  Day 03 Part 02" << std::endl << std::endl;
+    std::cout << "  » Number of deliveries total: '" << deliveries << "'" << std::endl;
+    std::cout << "  » PUZZLE ANSWER: unique number of houses delivered too: " << coords_v.size() << std::endl
               << std::endl;
 
     input_file.close();

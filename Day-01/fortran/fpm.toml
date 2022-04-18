@@ -4,7 +4,7 @@ description = "Advent of Code 2015 Puzzle for Day 01 Part 1 and Part 2"
 license = "MIT"
 author = "Simon Rowe"
 maintainer = "simon@wiremoons.com"
-copyright = "Copyright 2021, Simon Rowe"
+copyright = "Copyright 2022, Simon Rowe"
 
 [[ executable ]]
 name = "aoc_day01_p1"
