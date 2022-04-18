@@ -1,11 +1,11 @@
 ## +++ DEFAULT MAKE OUTPUT +++ :
-## Set defaut 'make' rule to run if no argument is given
+## Set default 'make' rule to run if no argument is given
 .PHONY: default
 default: all ;
 
-all: d1 d2 d3 d5 d6
+all: d1 d2 d3 d5 d6 d7
 
-clean: d1-clean d2-clean d3-clean d5-clean d6-clean
+clean: d1-clean d2-clean d3-clean d5-clean d6-clean d7-clean
 
 d1:
 	make -C ./Day-01/cpp
@@ -22,6 +22,9 @@ d5:
 d6:
 	make -C ./Day-06
 
+d7:
+	make -C ./Day-07
+
 # run make clean for each day
 d1-clean:
 	make -C ./Day-01/cpp clean
@@ -37,3 +40,6 @@ d5-clean:
 
 d6-clean:
 	make -C ./Day-06 clean
+
+d7-clean:
+	make -C ./Day-07 clean
